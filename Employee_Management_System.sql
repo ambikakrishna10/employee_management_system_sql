@@ -34,6 +34,7 @@ select * from employee;
 
 
 select emp_name from employee;
+select emp_id, emp_name from employee;
 select emp_name, salary from employee;
 select emp_id, emp_name, salary from employee;
 
