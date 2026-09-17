@@ -49,6 +49,7 @@ select * from employee where emp_id = 103;
 select * from employee where dept_id = 1;
 select * from employee where dept_id = 2;
 select * from employee where city = 'Hyderabad';
+select * from employee where city = 'Hyderabad' and salary > 50000;
 select * from employee where city = 'Bangalore';
 
 
