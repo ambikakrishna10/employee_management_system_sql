@@ -48,10 +48,11 @@ select * from employee order by salary desc;
 select * from employee where emp_id = 103;
 select * from employee where dept_id = 1;
 select * from employee where dept_id = 2;
-SELECT * FROM employee WHERE dept_id IN (1, 3);
+select * from employee where dept_id in (1, 3);
 select * from employee where city = 'Hyderabad';
 select * from employee where city = 'Hyderabad' and salary > 50000;
 select * from employee where city = 'Bangalore';
+select * from employee where city not in ('Chennai', 'Pune');
 
 
 select distinct city from employee;
