@@ -53,6 +53,7 @@ select * from employee where city = 'Hyderabad';
 select * from employee where city = 'Hyderabad' and salary > 50000;
 select * from employee where city = 'Bangalore';
 select * from employee where city not in ('Chennai', 'Pune');
+SELECT * FROM employee WHERE salary BETWEEN 50000 AND 70000;
 
 
 select distinct city from employee;
