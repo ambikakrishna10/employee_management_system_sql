@@ -56,8 +56,13 @@ select * from employee where city not in ('Chennai', 'Pune');
 select * from employee where salary between 50000 and 70000;
 select * from employee where email is null;
 select * from employee where email is not null;
-SELECT * FROM employee 
-WHERE (dept_id = 1 OR dept_id = 2) AND salary >= 50000;
+select * from employee 
+where (dept_id = 1 or dept_id = 2) and salary >= 50000;
+
+
+select emp_name, salary
+from employee
+where salary > (select AVG(salary) from employee);
 
 
 select distinct city from employee;
