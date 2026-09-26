@@ -77,6 +77,12 @@ SET SQL_SAFE_UPDATES = 0;
 update employee set salary = 65000 where emp_id = 101;
 set sql_safe_updates = 1;
 
+SELECT emp_name, salary
+FROM employee
+WHERE dept_id IN (
+    SELECT dept_id FROM department WHERE dept_name IN ('HR', 'IT')
+);
+
 
 delete from employee where emp_id = 105;
 
